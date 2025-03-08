@@ -1,10 +1,15 @@
 local property = assetify.class:create("property", false, "ov_widget")
 property.private = {
+    ["text"] = {type = "string", default = ""},
     ["x"] = {type = "number", default = 0},
     ["y"] = {type = "number", default = 0},
     ["width"] = {type = "number", default = 0},
     ["height"] = {type = "number", default = 0},
+    ["text_align_x"] = {type = "string", default = "center"},
+    ["text_align_y"] = {type = "string", default = "center"},
     ["color"] = {type = "table", length = 3, default = {255, 255, 255}},
+    ["font_family"] = {type = "userdata", default = "default-bold"}, --TODO: ADD STRING AND USERDATA SUPPORT BOTH
+    ["font_scale"] = {type = "number", default = 1},
     ["background_color"] = {type = "table", length = 3, default = {255, 255, 255}},
     ["border_radius"] = {type = "number", default = 0},
     ["border_width"] = {type = "number", default = 0},

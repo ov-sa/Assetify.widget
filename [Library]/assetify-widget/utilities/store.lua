@@ -97,7 +97,6 @@ function store.public.animate(id)
                 private.transition[i].progress = (ov_widget.tick - private.transition[i].tick)/j.duration
                 if private.transition[i].progress <= 1 then
                     animated = true
-                    print(id)
                     if next_syntax.type == "table" then
                         private.transition[i].value = private.transition[i].value or {}
                         private.transition[i].value[1], private.transition[i].value[2], private.transition[i].value[3] = interpolateBetween(private.transition[i].current[1], private.transition[i].current[2], private.transition[i].current[3], private.transition[i].next[1], private.transition[i].next[2], private.transition[i].next[3], private.transition[i].progress, j.easing)
@@ -107,7 +106,7 @@ function store.public.animate(id)
                 end
             end
         end
-        if private.state.mode["hover"] then private.ctx.on_hover(public) end
+        if private.state.mode["hover"] and private.ctx.on_hover then private.ctx.on_hover(public) end
     end
     return animated
 end
