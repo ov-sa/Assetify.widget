@@ -11,6 +11,7 @@ property.private = {
     ["font_family"] = {type = "userdata", default = "default-bold"}, --TODO: ADD STRING AND USERDATA SUPPORT BOTH
     ["font_scale"] = {type = "number", default = 1},
     ["background_color"] = {type = "table", length = 3, default = {255, 255, 255}},
+    ["foreground_color"] = {type = "table", length = 3, default = {255, 255, 255}},
     ["border_radius"] = {type = "number", default = 0},
     ["border_width"] = {type = "number", default = 0},
     ["border_dash"] = {type = "number", default = 0},
