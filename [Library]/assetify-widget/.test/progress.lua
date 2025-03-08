@@ -3,7 +3,7 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.text.draw({
         id = "progress-header",
         text = "<Progress/>",
-        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125 - 55,
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 135 - 55,
         width = 113, height = 50, 
         text_align_x = "left",
         color = {220, 68, 70},
@@ -25,7 +25,7 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#1-1",
         type = "horizontal",
-        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125,
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 135,
         width = 300, height = 8, 
         progress = 0.25,
         font_family = "default-bold",
@@ -46,7 +46,7 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#1-2",
         type = "horizontal",
-        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125 + 8 + 25,
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 135 + 8 + 25,
         width = 300, height = 8, 
         progress = 0.75,
         font_family = "default-bold",
@@ -67,7 +67,7 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#1-3",
         type = "horizontal",
-        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125 + 8 + 25 + 8 + 25,
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 135 + 8 + 25 + 8 + 25,
         width = 300, height = 8, 
         progress = 0.5,
         font_family = "default-bold",
@@ -88,7 +88,7 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#1-4",
         type = "horizontal",
-        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125 + 8 + 25 + 8 + 25 + 8 + 25,
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 135 + 8 + 25 + 8 + 25 + 8 + 25,
         width = 300, height = 8, 
         progress = 0.35,
         font_family = "default-bold",
@@ -109,7 +109,7 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#1-5",
         type = "horizontal",
-        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125 + 8 + 25 + 8 + 25 + 8 + 25 + 8 + 25,
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 135 + 8 + 25 + 8 + 25 + 8 + 25 + 8 + 25,
         width = 300, height = 8, 
         progress = 0.6,
         font_family = "default-bold",
@@ -133,8 +133,8 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#2-1",
         type = "vertical",
-        x = 100 + 300 + 25 + 25 + 25, y = 100 + 24 + 25 + 32 + 25 + 125,
-        width = 8, height = 140, 
+        x = 100 + 300 + 25 + 25 + 25, y = 100 + 24 + 25 + 32 + 25 + 133,
+        width = 8, height = 142, 
         progress = 0.25,
         font_family = "default-bold",
         background_color = {31, 31, 31},
@@ -154,8 +154,8 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#2-2",
         type = "vertical",
-        x = 100 + 300 + 25 + 25 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 125,
-        width = 8, height = 140, 
+        x = 100 + 300 + 25 + 25 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 133,
+        width = 8, height = 142, 
         progress = 0.75,
         font_family = "default-bold",
         background_color = {31, 31, 31},
@@ -175,8 +175,8 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#2-3",
         type = "vertical",
-        x = 100 + 300 + 25 + 25 + 25 + 8 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 125,
-        width = 8, height = 140, 
+        x = 100 + 300 + 25 + 25 + 25 + 8 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 133,
+        width = 8, height = 142, 
         progress = 0.5,
         font_family = "default-bold",
         background_color = {31, 31, 31},
@@ -196,8 +196,8 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#2-4",
         type = "vertical",
-        x = 100 + 300 + 25 + 25 + 25 + 8 + 25 + 8 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 125,
-        width = 8, height = 145, 
+        x = 100 + 300 + 25 + 25 + 25 + 8 + 25 + 8 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 133,
+        width = 8, height = 142, 
         progress = 0.35,
         font_family = "default-bold",
         background_color = {31, 31, 31},
@@ -217,8 +217,8 @@ addEventHandler("onClientHUDRender", root, function()
     ov_widget.progress.draw({
         id = "progress#2-5",
         type = "vertical",
-        x = 100 + 300 + 25 + 25 + 25 + 8 + 25 + 8 + 25 + 8 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 125,
-        width = 8, height = 140, 
+        x = 100 + 300 + 25 + 25 + 25 + 8 + 25 + 8 + 25 + 8 + 25 + 8 + 25, y = 100 + 24 + 25 + 32 + 25 + 133,
+        width = 8, height = 142, 
         progress = 0.6,
         font_family = "default-bold",
         background_color = {31, 31, 31},
