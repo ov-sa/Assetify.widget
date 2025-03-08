@@ -9,7 +9,7 @@ box.private.svg = [[
             fill="#ffffff"
             stroke="#ffffff"
             stroke-width="0px"
-            stroke-dasharray="25px"
+            stroke-dasharray="0px"
             rx="0px"
             ry="0px"
         />

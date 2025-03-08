@@ -1,32 +1,34 @@
 local progress = assetify.class:create("progress", false, "ov_widget")
-progress.private.svg = [[
-    <svg viewBox = "0 0 ]]..ov_widget.resolution[1].." "..ov_widget.resolution[2]..[[">
-        <rect
-            x="0px"
-            y="0px"
-            width="0px"
-            height="0px"
-            fill="#ffffff"
-            stroke="#ffffff"
-            stroke-width="0px"
-            stroke-dasharray="25px"
-            rx="0px"
-            ry="0px"
-        />
-        <rect
-            x="0px"
-            y="0px"
-            width="0px"
-            height="0px"
-            fill="#ffffff"
-            stroke="#ffffff"
-            stroke-width="0px"
-            stroke-dasharray="25px"
-            rx="0px"
-            ry="0px"
-        />
-    </svg>
-]]
+progress.private.svg = {
+    horizontal = [[
+        <svg viewBox = "0 0 ]]..ov_widget.resolution[1].." "..ov_widget.resolution[2]..[[">
+            <rect
+                x="0px"
+                y="0px"
+                width="0px"
+                height="0px"
+                fill="#ffffff"
+                stroke="#ffffff"
+                stroke-width="0px"
+                stroke-dasharray="0px"
+                rx="0px"
+                ry="0px"
+            />
+            <rect
+                x="0px"
+                y="0px"
+                width="0px"
+                height="0px"
+                fill="#ffffff"
+                stroke="#ffffff"
+                stroke-width="0px"
+                stroke-dasharray="0px"
+                rx="0px"
+                ry="0px"
+            />
+        </svg>
+    ]]
+}
 
 function progress.public.draw(ctx, parent)
     local id = ov_widget.resource..":progress:"..ctx.id
