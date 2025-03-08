@@ -2,7 +2,7 @@ addEventHandler("onClientHUDRender", root, function()
     -->> Row: Header <<--
     ov_widget.text.draw({
         id = "button-header",
-        text = "<Buttons/>",
+        text = "<Button/>",
         x = 100, y = 100 - 55,
         width = 113, height = 50, 
         text_align_x = "left",

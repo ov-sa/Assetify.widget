@@ -18,7 +18,7 @@
 
     <!-- Test -->
     <script src=".test/index.lua" type="client" cache="true"/>
-    <!--script src=".test/button.lua" type="client" cache="true"/>
-    <script src=".test/progress.lua" type="client" cache="true"/-->
+    <script src=".test/button.lua" type="client" cache="true"/>
+    <script src=".test/progress.lua" type="client" cache="true"/>
     <file src=".test/fonts/**"/>
 </meta>
