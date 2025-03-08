@@ -1,5 +1,5 @@
 <meta>
-    <info author="vStudio" name="ov_widget" type="Script" version="1.0.0"/>
+    <info author="vStudio" name="Assetify.widget" type="Library" version="1.0.0"/>
 
     <!-- Utilities -->
     <script src="utilities/index.lua" type="client" cache="true"/>
