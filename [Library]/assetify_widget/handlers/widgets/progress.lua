@@ -104,7 +104,7 @@ function progress.public.draw(ctx, parent)
                 if i == 2 then
                     local circumference = 2*3.14*ov_widget.store.value(id, "radius")
                     xmlNodeSetAttribute(node[i], "stroke-dasharray", circumference.."px")
-                    xmlNodeSetAttribute(node[i], "stroke-dashoffset", (circumference*progress).."px")
+                    xmlNodeSetAttribute(node[i], "stroke-dashoffset", (circumference*(1 - progress)).."px")
                 end
             end
         end
