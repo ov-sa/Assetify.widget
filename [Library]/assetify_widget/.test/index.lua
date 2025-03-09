@@ -3,6 +3,7 @@ showCursor(true)
 addEventHandler("onClientHUDRender", root, function()
     dxDrawRectangle(0, 0, ov_widget.resolution[1], ov_widget.resolution[2], tocolor(20, 20, 20, 255))
 
+    --[[
     ov_widget.text.draw({
         id = "button-header",
         text = "TEST ELEMENT",
@@ -24,4 +25,21 @@ addEventHandler("onClientHUDRender", root, function()
             self.font_scale = 0.5
         end
     })
+
+    ov_widget.progress.draw({
+        id = "progress#1-1",
+        icon = "search",
+        x = 100, y = 100 + 24 + 25 + 32 + 25 + 125,
+        width = 201, height = 8, 
+        font_family = "default-bold",
+        background_color = {31, 31, 31},
+        foreground_color = {255, 0, 0},
+        border_radius = 4,
+        transition = {
+            color = {duration = 250, easing = "OutQuad"},
+            background_color = {duration = 250, easing = "OutQuad"},
+            foreground_color = {duration = 250, easing = "OutQuad"}
+        }
+    })
+    ]]
 end)
