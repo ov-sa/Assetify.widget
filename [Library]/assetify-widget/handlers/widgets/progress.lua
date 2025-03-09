@@ -40,9 +40,9 @@ progress.private.svg.circle = [[
             stroke-width="0px"
         />
         <circle
-            r="90"
-            cx="100"
-            cy="100"
+            r="0px"
+            cx="0px"
+            cy="0px"
             fill="none"
             stroke="#ffffff"
             stroke-width="0px"
