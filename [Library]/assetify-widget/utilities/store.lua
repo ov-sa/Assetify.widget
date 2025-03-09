@@ -50,7 +50,7 @@ function store.public.value(id, property)
     local private = store.public.fetch(id, "private")
     if store.public.valid(private.parent) then return store.public.value(private.parent, property) end
     return (
-        (private.ctx.transition[property] and private.transition[property] and private.transition[property].value) or
+        (private.ctx.transition and private.ctx.transition[property] and private.transition[property] and private.transition[property].value) or
         ov_widget.property.value(property, public[property]) or
         ov_widget.property.value(property, private.ctx[property], true)
     )
@@ -82,7 +82,7 @@ function store.public.animate(id)
     local private = store.public.fetch(id, "private")
     local animated = private.ready ~= -1
     private.ready = -1
-    if not store.public.valid(private.parent) then
+    if not store.public.valid(private.parent) and private.ctx.transition then
         for i, j in pairs(private.ctx.transition) do
             local next_syntax = ov_widget.property.syntax(i)
             if next_syntax then

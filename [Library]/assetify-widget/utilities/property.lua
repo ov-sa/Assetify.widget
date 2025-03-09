@@ -5,6 +5,7 @@ property.private = {
     ["y"] = {type = "number", default = 0},
     ["width"] = {type = "number", default = 0},
     ["height"] = {type = "number", default = 0},
+    ["radius"] = {type = "number", default = 0},
     ["progress"] = {type = "number", default = 0},
     ["text_align_x"] = {type = "string", default = "center"},
     ["text_align_y"] = {type = "string", default = "center"},
