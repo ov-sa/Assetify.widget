@@ -68,7 +68,7 @@ function progress.public.draw(ctx, parent)
         end
     end
     ov_widget.store.update(id)
-    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent) then
+    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent, true) then
         private.svg = private.svg or svgCreate(ov_widget.resolution[1], ov_widget.resolution[2], progress.private.svg[private.type])
         if not private.document then
             private.document = private.document or {}

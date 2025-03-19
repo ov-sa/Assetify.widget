@@ -10,6 +10,6 @@ function text.public.draw(ctx, parent)
         private.state.mode["hover"] = (assetify.interface.isCursorAtPosition(ov_widget.store.value(id, "x"), ov_widget.store.value(id, "y"), ov_widget.store.value(id, "width"), ov_widget.store.value(id, "height")) and true) or nil
     end
     ov_widget.store.update(id)
-    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent) then end
+    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent, true) then end
     dxDrawText(ctx.text, ov_widget.store.value(id, "x"), ov_widget.store.value(id, "y"), ov_widget.store.value(id, "x") + ov_widget.store.value(id, "width"), ov_widget.store.value(id, "y") + ov_widget.store.value(id, "height"), RGBToColor(ov_widget.store.value(id, "color")), ov_widget.store.value(id, "font_scale"), ov_widget.store.value(id, "font_family"), ov_widget.store.value(id, "text_align_x"), ov_widget.store.value(id, "text_align_y"))
 end

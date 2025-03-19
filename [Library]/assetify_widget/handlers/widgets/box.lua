@@ -26,7 +26,7 @@ function box.public.draw(ctx, parent)
         private.state.mode["hover"] = (assetify.interface.isCursorAtPosition(ov_widget.store.value(id, "x"), ov_widget.store.value(id, "y"), ov_widget.store.value(id, "width"), ov_widget.store.value(id, "height")) and true) or nil
     end
     ov_widget.store.update(id)
-    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent) then
+    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent, true) then
         private.svg = private.svg or svgCreate(ov_widget.resolution[1], ov_widget.resolution[2], box.private.svg)
         if not private.document then
             private.document = private.document or {}

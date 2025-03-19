@@ -10,7 +10,7 @@ function button.public.draw(ctx, parent)
         private.state.mode["hover"] = (assetify.interface.isCursorAtPosition(ov_widget.store.value(id, "x"), ov_widget.store.value(id, "y"), ov_widget.store.value(id, "width"), ov_widget.store.value(id, "height")) and true) or nil
     end
     ov_widget.store.update(id)
-    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent) then end
+    if ov_widget.store.animate(id) or ov_widget.store.animate(private.parent, true) then end
     ov_widget.box.draw(ctx, id)
     if ctx.text then
         ov_widget.text.draw(ctx, id)
